@@ -1,0 +1,79 @@
+:root{
+    --primary-background-color: #417791;
+    --font-color-primary: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilização primeira seção*/
+body {
+    background-color: var(--primary-background-color);
+    color: var(--font-color-primary);
+    width: 650px;
+    height: 100vh;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#title h1 {
+    font-size: 70px;
+}
+#title h2 {
+    font-size: 44px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart {
+    width: 162px;
+    height: 152px;
+}
+
+#logo-text {
+    width: 373px;
+    height: 86px;
+    font-size: 58px;
+}
+/*Fim Estilização primeira seção*/
+
+/*Seção mensagem*/
+#content {
+    width: 650px;
+    height: 210px;
+    margin-left: 57px;
+    margin-top: 80px;
+    margin-bottom: 105px;
+}
+#users {
+    width: 650px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+    align-items: start;
+    justify-content: left;
+}
+#users h2, #users span {
+    font-size: 48px;
+    font-weight: 600;
+}
+#users h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
