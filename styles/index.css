@@ -35,7 +35,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 #title h1 {
@@ -52,8 +52,8 @@ body {
 }
 
 #cart {
-    width: 6.80rem;
-    height: 6.4rem;
+    width: 6.4rem;
+    height: 6rem;
 }
 
 #logo-text {
@@ -69,6 +69,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 
 #explain {
@@ -76,6 +77,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 
 #text-cel {
@@ -84,17 +86,17 @@ body {
 }
 
 #cel {
-    width: 8.25rem;
-    height: 8.25rem;
+    width: 7.75rem;
+    height: 7.75rem;
     margin: 30px auto 20px auto;
 }
 /*Explain*/
 
 /*login ou sign*/
 #login {
-    margin-top: 90px;
+    margin-top: 50px;
     width: 420px;
-    height: 292px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
