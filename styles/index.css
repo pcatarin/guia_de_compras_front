@@ -4,9 +4,12 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
+    
+}
+html, body {
+    overflow: hidden;
 }
 
 /*Estilização primeira seção*/
@@ -14,8 +17,8 @@ body {
     background-color: var(--primary-background-color);
     color: var(--font-color-primary);
     display: flex;
-    width: 100dvw;
-    height: 100dvh;
+    min-width: 100dvw;
+    min-height: 100dvh;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -33,8 +36,8 @@ body {
 #app {
     width: 100%;
     max-width: 420px;
-    max-height: 100%;
-    margin: 0 auto;
+    min-height: 100dvh;
+    margin: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
