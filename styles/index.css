@@ -14,6 +14,8 @@ body {
     background-color: var(--primary-background-color);
     color: var(--font-color-primary);
     display: flex;
+    width: 100dvw;
+    height: 100dvh;
     justify-content: center;
     align-items: center;
     margin: 0;
