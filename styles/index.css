@@ -18,6 +18,15 @@ body {
     align-items: center;
     margin: 0;
     font-family: sans-serif;
+    background: #386980;
+    background: -webkit-linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    background: -moz-linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    background: linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#386980",
+    endColorstr="#3C6E85",
+    GradientType=0
+    );
 }
 #app {
     width: 100%;
@@ -25,9 +34,12 @@ body {
     min-height: 100dvh;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(/images/Celular_Aplic.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #title {
@@ -60,6 +72,7 @@ body {
     width: 14rem;
     height: 2.5rem;
     font-size: 3.62rem;
+    color: var(--font-color-primary);
 }
 /*Fim Estilização primeira seção*/
 
@@ -70,6 +83,7 @@ body {
     justify-content: center;
     align-items: center;
     height: fit-content;
+    margin-top: 30px;
 }
 
 #explain {
@@ -83,6 +97,7 @@ body {
 #text-cel {
     font-size: 2rem;
     text-align: center;
+    color: var(--font-color-primary);
 }
 
 #cel {
@@ -94,12 +109,13 @@ body {
 
 /*login ou sign*/
 #login {
-    margin-top: 50px;
+    margin-top: 150px;
     width: 420px;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 20px;
 }
 #text-login {
     margin-bottom: 2rem;
@@ -119,7 +135,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 #form-login input {
     width: 230px;
@@ -155,7 +171,7 @@ i{
     font-weight: 600;
 }
 #password {
-    margin-top: 19px;
+    margin-top: 10px;
 }
 .button-entry {
     width: 120px;
@@ -166,14 +182,18 @@ i{
     color: var(--font-color-primary);
     text-align: center;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-left: 150px;
 }
 #sign {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
 }
 #text-sign {
     font-size: 2rem;
