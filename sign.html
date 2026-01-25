@@ -10,39 +10,41 @@
     <script src="/src/sign.js"></script>
 </head>
 <body>
-    <header id="top">
-        
-        <section id="title">
+
+    <main id="app">
+            
+        <header id="title">
             <div id="logo">
                 <img src="images/carrinho_compras_just.png" alt="" srcset="" id="cart">
                 <h2 id="logo-text">EasyMarket</h2>
-
             </div>
-        </section>
-
-    </header>
-
-    <main>
-        <div id="box-user">
-            
-            <i class="bi bi-person-circle" id="user-icon"></i>
-
-        </div>
+        </header>
+    
         
+    
+        <section id="content">
+            <div id="box-user"> 
+                <i class="bi bi-person-circle" id="user-icon"></i> 
+            </div>
+            
+            
+            <section id="sign">
+                <form action="" id="form-sign">
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="Nome de Usuário">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirme a Senha">
+                    
+                    <button id="button-sign">Registrar</button>
+                    
+                </form>
 
-        <form action="" id="form-sign">
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="Nome de Usuário">
-            <input type="password" placeholder="Senha">
-            <input type="password" placeholder="Confirme a Senha">
-            <a href="welcome.html">
-                <button id="button-sign">Registrar</button>
-            </a>
-        </form>
-
-        <nav id="back-button">
-            <a href="index.html"><i class="bi bi-arrow-left-circle"></i></a>
-        </nav>
+            </section>
+    
+            <nav id="back-button">
+                <a href="index.html"><i class="bi bi-arrow-left-circle"></i></a>
+            </nav>
+        </section>
     </main>
     
 </body>

@@ -4,26 +4,50 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: var(--primary-background-color);
     color: var(--font-color-primary);
-    width: 650px;
-    height: 100vh;
-    margin: auto;
+    display: flex;
+    min-height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     font-family: sans-serif;
+    background: #386980;
+    background: -webkit-linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    background: -moz-linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    background: linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#386980",
+    endColorstr="#3C6E85",
+    GradientType=0
+    );
+}
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#app {
+    width: 100%;
+    max-width: 420px;
+    min-height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*Estilização header*/
 #title {
-    margin-top: 110px;
-}
-#title h1 {
-    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 #logo {
@@ -33,20 +57,29 @@ body {
 }
 
 #cart {
-    width: 162px;
-    height: 152px;
+    width: 6.4rem;
+    height: 6rem;
 }
 
 #logo-text {
-    width: 373px;
-    height: 86px;
-    font-size: 58px;
+    width: 14rem;
+    height: 2.5rem;
+    font-size: 2.60rem;
+    color: var(--font-color-primary);
 }
 /*Estilização Header*/
 
 /*Estilização Main*/
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 30px;
+}
 #box-user {
-    width: 650px;
+    width: 100%;
     height: 130px;
     color: var(--font-color-primary);
     display: flex;
@@ -58,7 +91,7 @@ body {
     color: var(--font-color-primary);
     width: 130px;
     height: 130px;
-    font-size: 128px;
+    font-size: 90px;
     display: block;
 }
 i {
@@ -67,19 +100,27 @@ i {
 /*Estilização main*/
 
 /*Formulario*/
+#sign {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0 20px;
+}
 #form-sign {
-    width: 650px;
-    height: 432px;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 28px;
-    margin-top: 68px;
+    gap: 15px;
+    margin-top: 10px;
 }
 #form-sign input {
-    width: 400px;
-    height: 55px;
+    width: 100%;
+    height: 42px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -88,14 +129,15 @@ i {
     font-weight: 600;
 }
 #button-sign {
-    width: 180px;
-    height: 60px;
-    border-radius: 20px;
-    color: var(--font-color-primary);
+    width: 120px;
+    height: 40px;
     background-color: #0D3682;
-    font-size: 28px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    color: var(--font-color-primary);
+    text-align: center;
     font-weight: 600;
-    margin-top: 68px;
+    margin-top: 10px;
 }
 /*Formulário*/
 
@@ -103,10 +145,11 @@ i {
 #back-button {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 90px;
+    width: 45px;
+    height: 45px;
     font-size: 80px;
-    margin-top: 260px;
-    margin-left: 60px;
+    margin-top: 30px;
+    /*align-items: ;
+    padding-top: ;
+    */
 }
