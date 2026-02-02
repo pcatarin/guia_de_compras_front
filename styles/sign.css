@@ -153,14 +153,3 @@ i {
     padding-top: ;
     */
 }
-#back-button a {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    font-size: 45px;
-    margin-top: 50px;
-    border-radius: 50%;
-    /*align-items: ;
-    padding-top: ;
-    */
-}
