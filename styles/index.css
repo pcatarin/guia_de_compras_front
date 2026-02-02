@@ -191,6 +191,21 @@ i{
     margin-top: 10px;
     margin-left: 150px;
 }
+.inputs a {
+    width: 120px;
+    height: 40px;
+    background-color: #0D3682;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    color: var(--font-color-primary);
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 150px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #sign {
     display: flex;
     flex-direction: column;
