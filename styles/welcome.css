@@ -80,6 +80,9 @@ body {
 
 /*Seção mensagem*/
 #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     min-height: 100dvh;
     padding-top: 10px;
@@ -102,7 +105,7 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     margin-top: 1rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0rem;
     text-align: left;
     width: 100%;
     padding-left: 5%;
@@ -136,4 +139,36 @@ section#options {
     text-align: center;
     font-weight: 600;
     margin-top: 10px;
+}
+#nav-sections {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-color-primary);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    color: var(--primary-background-color);
+    font-size: 2.5rem;
+}
+.btn-nav:hover {
+    background-color: #b9b9b9;
+    cursor: pointer;
+    width: 3.4rem;
+    height: 3.4rem;
+}
+
+.btn-nav i {
+    display: block;
+    margin: auto;
 }

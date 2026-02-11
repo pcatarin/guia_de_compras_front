@@ -153,3 +153,12 @@ i {
     padding-top: ;
     */
 }
+#back-button:focus, #back-button:active
+#back-button a:focus, #back-button a:active
+#back-button a i:focus, #back-button a i:active {
+    outline: none;
+    border-radius: 50%;
+    box-shadow: none;
+    overflow: hidden;
+}
+
