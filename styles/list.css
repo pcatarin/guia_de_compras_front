@@ -1,0 +1,336 @@
+:root{
+    --primary-background-color: #417791;
+    --font-color-primary: #D9D9D9;
+}
+
+* {
+    
+    box-sizing: border-box;
+    
+}
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--font-color-primary);
+    display: flex;
+    min-height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: sans-serif;
+    background: #386980;
+    background: -webkit-linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    background: -moz-linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    background: linear-gradient(0deg,rgba(56, 105, 128, 1) 20%, rgba(151, 194, 173, 1) 50%, rgba(60, 110, 133, 1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#386980",
+    endColorstr="#3C6E85",
+    GradientType=0
+    );
+}
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#app {
+    width: 100%;
+    max-width: 420px;
+    min-height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Estilização das seções*/
+#app div {
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+}
+
+/*Estilização do Botão de voltar*/
+#app #back-button {
+    height: fit-content;
+}
+#back-button-content {
+    display: flex;
+    font-size: 1.2rem;
+    color: var(--font-color-primary);
+    padding: 10px;
+}
+
+/*Estilização das informações*/
+#header {
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-bottom: 5px;
+}
+
+#list-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 10px 0 10px;
+    height: fit-content;
+    font-size: .8rem;
+}
+#list-name h2 {
+    margin: 0;
+}
+#list-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: fit-content;
+}
+#list-info h3 {
+    margin: 0;
+    font-size: .9rem;
+    color: #d9d9d9a0;
+}
+
+/*Estilização do Box de iten*/
+#content {
+    width: 100%;
+    min-height: min-content;
+    max-height: fit-content;
+    padding: 0 0 10px 0;
+}
+#itens {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 5px 10px;
+    column-gap: 1px;
+}
+/*
+#itens div {
+    width: 95%;
+    height: 40px;
+    background-color: var(--font-color-primary);
+    border: 1px solid blue;
+}
+    */
+/*
+#itens .item-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+}
+    */
+#itens #check-box {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2.1rem;
+    color: rgb(7, 110, 7);
+    border: none;
+    padding-top: 1px;
+}
+.check-ok {
+    background-color: rgb(157, 240, 157);
+}
+
+#itens #iten-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+    justify-items: first baseline;
+    border: none;
+    background-color: var(--font-color-primary);
+    height: 55%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+#itens #iten-box section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /*max-height: fit-content;
+    max-width: fit-content;*/
+}
+#itens #iten-box h4 {
+    margin: 0;
+    color: var(--primary-background-color);
+    font-size: 0.6rem;
+}
+#itens #control-button {
+    display: grid;
+    height: 50px;
+    padding: 0 5px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 5px;
+    border: none;
+    background-color: transparent;
+}
+#itens #control-button .ct-btns {
+    width: 75%;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: blueviolet;
+    font-size: 1.5rem;
+}
+#itens #control-button #add-btn {
+    background-color: rgb(83, 183, 83);
+}
+#itens #control-button #rem-btn {
+    background-color: rgb(192, 59, 59);
+}
+
+#itens #trash-button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(193, 189, 189);
+    color: rgb(234, 14, 14);
+    font-weight: bold;
+    border: none;
+}
+
+/*Adicionar itens*/
+#iten-add {
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#search-box {
+    width: 85%;
+    height: fit-content;
+    background-color: var(--font-color-primary);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+    column-gap: 5px;
+}
+#search-box label {
+    color: var(--primary-background-color);
+    font-size: 1.1rem;
+    padding: 2px 0 0 0;
+}
+#entry-title {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-background-color);
+}
+#entry-title:focus {
+    outline: none;
+}
+#select-box {
+    width: 85%;
+    padding: 1px;
+}
+#select-title {
+    width: 100%;
+    max-height: fit-content;
+    padding: 1px 3px;
+}
+#select-title h3 {
+    margin: 0;
+    font-weight: 500;
+    color: #f7f7f7;
+}
+#select-box #select-iten {
+    width: 100%;
+    max-height: 100px;
+    padding: 1px 3px;
+}
+#list-iten {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+.itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--font-color-primary);
+    color: var(--primary-background-color);
+    text-decoration: none;
+    list-style: none;
+    font-size: .7rem;
+}
+.itens:hover {
+    cursor: pointer;
+    background-color: #d9d9d997;
+}
+
+/*Estilização do nav sections*/
+#nav-sections {
+    display: flex;
+    width: 100%;
+    max-height: fit-content;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+    
+}  
+#nav-sections article {
+    width: fit-content;
+    height: 48px;
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-color-primary);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    color: var(--primary-background-color);
+    font-size: 2.5rem;
+}
+
+.btn-nav:hover {
+    background-color: #b9b9b9;
+    cursor: pointer;
+    width: 2.9rem;
+    height: 2.9rem;
+}
+
+.btn-nav i {
+    display: block;
+    color: var(--primary-background-color);
+}

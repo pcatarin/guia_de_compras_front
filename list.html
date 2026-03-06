@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Market - Lista</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <script src="src/list.js" defer></script>
+</head>
+<body>
+    <main id="app">
+        <!--Topo de Pagina-->
+        <div id="back-button">
+            <a href="#" id="back-button-content"><i class="bi bi-box-arrow-left"></i></a>
+        </div>
+
+        <!--Cabeçalho de Lista-->
+        <div id="header">
+            <section id="list-name">
+                <h2 id="list-title">Lista 01</h2>
+            </section>
+            <section id="list-info">
+                <h3 class="list-infos">
+                    Itens: <span id="list-quantity">02</span>
+                </h3>
+                <h3 class="list-infos">
+                    Total: R$ <span id="list-value">12,80</span>
+                </h3>
+            </section>
+        </div>
+
+        <!--Conteudo da lista-->
+        <div id="content">
+            <section id="itens">
+
+                <div id="check-box" class="container-itens check-box-btn">
+                    <i class="bi bi-check2-circle"></i>
+                </div>
+
+                <div id="iten-box" class="container-itens">
+                    <section class="item-title"><h4>Arroz</h4></section>
+                    <section>
+                        <h4>05</h4>
+                        <h4>R$10,00</h4>
+                    </section>
+                    <section><h4>Total: R$50,00</h4></section>                    
+                </div>
+
+                <div id="control-button" class="container-itens">
+                    <section id="add-btn" class="ct-btns">
+                        <i class="bi bi-plus"></i>
+                    </section>
+
+                    <section id="rem-btn" class="ct-btns">
+                        <i class="bi bi-dash"></i>
+                    </section>
+                </div>
+
+                <div id="trash-button" class="container-itens">
+                    <i class="bi bi-trash3"></i>
+                </div>
+
+            </section>
+
+            <section id="itens">
+
+                <div id="check-box" class="container-itens check-box-btn">
+                    <i class="bi bi-check2-circle"></i>
+                </div>
+
+                <div id="iten-box" class="container-itens">
+                    <section><h4>Arroz</h4></section>
+                    <section>
+                        <h4>05</h4>
+                        <h4>R$10,00</h4>
+                    </section>
+                    <section><h4>Total: R$50,00</h4></section>                    
+                </div>
+
+                <div id="control-button" class="container-itens">
+                    <section id="add-btn" class="ct-btns">
+                        <i class="bi bi-plus"></i>
+                    </section>
+
+                    <section id="rem-btn" class="ct-btns">
+                        <i class="bi bi-dash"></i>
+                    </section>
+                </div>
+
+                <div id="trash-button" class="container-itens">
+                    <i class="bi bi-trash3"></i>
+                </div>
+
+            </section>
+
+            <section id="itens">
+
+                <div id="check-box" class="container-itens check-box-btn">
+                    <i class="bi bi-check2-circle"></i>
+                </div>
+
+                <div id="iten-box" class="container-itens">
+                    <section><h4>Arroz</h4></section>
+                    <section>
+                        <h4>05</h4>
+                        <h4>R$10,00</h4>
+                    </section>
+                    <section><h4>Total: R$50,00</h4></section>                    
+                </div>
+
+                <div id="control-button" class="container-itens">
+                    <section id="add-btn" class="ct-btns">
+                        <i class="bi bi-plus"></i>
+                    </section>
+
+                    <section id="rem-btn" class="ct-btns">
+                        <i class="bi bi-dash"></i>
+                    </section>
+                </div>
+
+                <div id="trash-button" class="container-itens">
+                    <i class="bi bi-trash3"></i>
+                </div>
+
+            </section>
+        </div>
+
+        <!--Escolha dos itens-->
+        <div id="iten-add">
+            <section id="search-box">
+                <label for="entry-title"><i class="bi bi-search"></i></label>
+                <input type="text" name="" id="entry-title">
+            </section>
+
+            <section id="select-box">
+                <div id="select-title">
+                    <h3>Itens</h3>
+                </div>
+
+                <div id="select-iten">
+                    <ul id="list-iten">
+                        <li class="itens">Arroz</li>
+                        <li class="itens">Feijão</li>
+                        <li class="itens">Amaciante</li>
+                        <li class="itens">Refrigerante</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!--Navegação entre Seções-->
+        <div id="nav-sections">
+                <article id="profile">
+                    <a href="profile.html">
+                        <button class="btn-nav">
+                            <i class="bi bi-person-circle" id="user-iconB"></i>
+                        </button>
+                    </a>
+                </article>
+
+                <article id="home">
+                    <a href="welcome.html">
+                        <button class="btn-nav">
+                            <i class="bi bi-house-door"></i>
+                        </button>
+                    </a>
+                </article>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
